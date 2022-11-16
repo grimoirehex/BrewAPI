@@ -1,0 +1,27 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "$return"
+    },
+    {
+      "name": "inputTable",
+      "direction": "in",
+      "type": "table",
+      "connection": "brewapib390_STORAGE",
+      "tableName": "straightToAle",
+      "take": 50
+    }
+  ]
+}
